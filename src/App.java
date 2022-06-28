@@ -1,3 +1,4 @@
+import facade.Facade;
 import singleton.SingletonEager;
 import singleton.SingletonLazy;
 import singleton.SingletonLazyHolder;
@@ -35,5 +36,8 @@ public class App {
         robo.mover();
         robo.setComportamento(defensivo);
         robo.mover();
+
+        Facade facade = new Facade();
+        facade.migrarCliente("flavio", "49502");
     }
 }
